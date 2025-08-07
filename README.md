@@ -20,9 +20,6 @@ RL_Tetris/
 │   ├── test_optimized_ce.py      # Optimized CE test
 │   ├── test_efficient_scaled_ce.py # Scaled CE test
 │   └── requirements.txt # Dependencies
-├── data/                # Training results and models
-│   ├── models/          # Saved models
-│   └── plots/           # Training plots
 └── README.md           # This file
 ```
 
