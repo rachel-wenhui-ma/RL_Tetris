@@ -1,0 +1,33 @@
+{
+  "generations": [
+    0
+  ],
+  "best_scores": [
+    34.8
+  ],
+  "mean_scores": [
+    1.8399999999999999
+  ],
+  "std_scores": [
+    7.56692804247536
+  ],
+  "noise_levels": [
+    0.995
+  ],
+  "elite_scores": [
+    [
+      34.8,
+      1.2,
+      0.6,
+      0.2,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "population_diversity": [
+    7.56692804247536
+  ],
+  "weight_evolution": [
+    

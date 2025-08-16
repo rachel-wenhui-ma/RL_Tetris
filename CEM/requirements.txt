@@ -1,0 +1,12 @@
+numpy>=1.21.0
+matplotlib>=3.5.0
+multiprocessing
+logging
+json
+datetime
+typing
+functools
+gc
+time
+os
+sys 

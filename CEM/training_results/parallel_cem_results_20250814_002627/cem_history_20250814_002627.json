@@ -1,0 +1,80 @@
+{
+  "generations": [],
+  "best_scores": [],
+  "mean_scores": [],
+  "std_scores": [],
+  "noise_levels": [],
+  "elite_scores": [],
+  "population_diversity": [],
+  "weight_evolution": [],
+  "convergence_metrics": [],
+  "errors": [
+    {
+      "generation": 0,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 1,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 2,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 3,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 4,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 5,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 6,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 7,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 8,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 9,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 10,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 11,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 12,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 13,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    },
+    {
+      "generation": 14,
+      "error": "evaluate_weights_worker() missing 3 required positional arguments: 'feature_set', 'games_per_eval', and 'game_timeout'"
+    }
+  ],
+  "game_times": [],
+  "parallel_efficiency": [],
+  "total_training_time": 12.857484817504883,
+  "interruption_point": {
+    "generation": 14,
+    "reason": "completed"
+  }
+}

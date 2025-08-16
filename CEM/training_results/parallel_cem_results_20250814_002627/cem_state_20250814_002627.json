@@ -1,0 +1,27 @@
+{
+  "feature_set": "dellacherie",
+  "population_size": 20,
+  "elite_size": 8,
+  "noise_std": 1.0,
+  "noise_decay": 0.995,
+  "n_processes": 16,
+  "current_generation": 14,
+  "mean": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "std": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "interruption_reason": "completed",
+  "timestamp": "20250814_002627"
+}

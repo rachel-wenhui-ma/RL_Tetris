@@ -1,0 +1,48 @@
+{
+  "generations": [
+    0
+  ],
+  "best_scores": [
+    2.5
+  ],
+  "mean_scores": [
+    0.2
+  ],
+  "std_scores": [
+    0.6271629240742259
+  ],
+  "noise_levels": [
+    0.95
+  ],
+  "elite_scores": [
+    [
+      2.5,
+      0.5,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "population_diversity": [
+    0.6271629240742259
+  ],
+  "weight_evolution": [
+    [
+      0.2188862710896618,
+      0.7338815177719762,
+      -0.1696113364063676,
+      0.35701005622716825,
+      0.21889475052022864,
+      -0.0026666060404415106
+    ]
+  ],
+  "convergence_metrics": [],
+  "errors": [],
+  "game_times": [
+    0.3405958334604899
+  ],
+  "parallel_efficiency": [
+    4.518610473376368
+  ],
+  "total_training_time": 0
+}
