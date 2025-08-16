@@ -1,112 +1,134 @@
 # Tetris Reinforcement Learning Project
 
-This project implements two different reinforcement learning approaches for playing Tetris:
+This project implements two main reinforcement learning approaches for playing Tetris:
 
-1. **Q-Learning**: A tabular Q-learning implementation with state discretization
-2. **Cross-Entropy Method**: A policy search implementation based on Szita & Lörincz (2006)
+1. **V-Learning**: A value-based learning approach with CNN architecture
+2. **CEM (Cross-Entropy Method)**: A policy search implementation with paper-accurate parameters
+
+## Project Introduction
+
+This project explores reinforcement learning techniques for the classic puzzle game Tetris. We implemented and compared different approaches, from basic tabular methods to sophisticated neural network architectures. The project demonstrates the evolution of RL techniques and provides practical implementations for Tetris AI research.
+
+Our main contributions include:
+- A CNN-based V-Learning implementation achieving 1,470+ lines cleared
+- A paper-accurate Cross-Entropy Method implementation following original research parameters
+- Comprehensive training results and analysis
+- Production-ready code with detailed documentation
 
 ## Project Structure
 
 ```
 RL_Tetris/
-├── Q_Learning/           # Tabular Q-learning implementation
+├── V-Learning/          # Main implementation: Value-based learning with CNN
+│   ├── tetris_ai.py     # Core V-Learning implementation
+│   ├── game.py          # Tetris game environment
+│   ├── requirements.txt # Dependencies
+│   └── README.md        # Detailed V-Learning documentation
+├── CEM/                 # Main implementation: Paper-accurate Cross-Entropy Method
+│   ├── cem_paper_implementation.py # Core CEM implementation
+│   ├── run_cem_paper.py          # Training script
+│   ├── training_results/          # Training outputs and logs
+│   ├── requirements.txt           # Dependencies
+│   └── README_CEM_Paper.md       # Detailed CEM documentation
+├── Q_Learning/          # Early exploration: Basic tabular Q-learning
 │   ├── src/             # Source code
 │   ├── train.py         # Training script
-│   ├── demo.py          # Demo script
-│   ├── test_basic.py    # Basic tests
 │   └── requirements.txt # Dependencies
-├── Cross_Entropy/       # Cross-Entropy method implementation
+├── Cross_Entropy/       # Early exploration: Basic Cross-Entropy method
 │   ├── src/             # Source code
-│   ├── test_optimized_ce.py      # Optimized CE test
-│   ├── test_efficient_scaled_ce.py # Scaled CE test
+│   ├── test_optimized_ce.py      # Basic CE test
 │   └── requirements.txt # Dependencies
 └── README.md           # This file
 ```
 
-## Q-Learning Implementation
+## Main Implementations
 
-### Features
-- Tabular Q-learning with state discretization
-- Height profile and hole count state representation
-- Gymnasium-compatible environment
-- CPU-friendly implementation
+### V-Learning (Value-Based Learning)
+**Location**: `V-Learning/`
 
-### Usage
+**Features**:
+- CNN-based neural network architecture
+- Value function approximation
+- Action sequence generation and evaluation
+- Advanced reward shaping with line clear bonuses
+
+**Performance**:
+- Best score: 1,470.1 lines cleared
+- Average performance: 792 lines
+- Training time: 29.4 minutes
+
+**Usage**:
 ```bash
-cd Q_Learning
+cd V-Learning
 pip install -r requirements.txt
-python train.py
-python demo.py
+python tetris_ai.py
 ```
 
-### State Space
-- Height profile of the board
-- Number of holes
-- Current and next piece information
+### CEM (Cross-Entropy Method)
+**Location**: `CEM/`
 
-### Action Space
-- 44 possible actions (4 rotations × 11 horizontal positions)
+**Features**:
+- Strictly paper-accurate implementation
+- Population size: 100 (paper standard)
+- Elite ratio: 0.1 (paper standard)
+- Games per evaluation: 30 (paper standard)
+- Adaptive noise strategy: Zt = max(5 - t/10, 0)
 
-## Cross-Entropy Implementation
+**Performance**:
+- Generation 1: Best=304.1, Mean=4.1
+- Generation 2: Best=96.3, Mean=11.6
+- Generation 3: Best=350.2, Mean=83.0
+- Generation 4: Best=400.1, Mean=179.5
 
-### Features
-- Based on Szita & Lörincz (2006) paper
-- Dellacherie's 6 features for state evaluation
-- Optimized action evaluation (only final landing positions)
-- CPU-friendly policy search method
-
-### Usage
+**Usage**:
 ```bash
-cd Cross_Entropy
+cd CEM
 pip install -r requirements.txt
-python test_efficient_scaled_ce.py
+python test_cem_paper.py  # Test implementation
+python run_cem_paper.py    # Start training
 ```
 
-### Performance
-- Achieved 440.5 lines cleared in testing
-- Training time: ~8 generations
-- CPU-only implementation
+## Early Exploratory Experiments
 
-### Features Used
-1. **Landing Height**: Height where piece lands
-2. **Rows Eliminated**: Number of lines cleared
-3. **Row Transitions**: Changes between empty/filled cells in rows
-4. **Column Transitions**: Changes between empty/filled cells in columns
-5. **Number of Holes**: Empty cells below filled cells
-6. **Cumulative Wells**: Sum of well depths
+### Q-Learning (Tabular Approach)
+**Location**: `Q_Learning/`
 
-## Results Comparison
+**Purpose**: Early exploration of tabular Q-learning for Tetris
+**Features**: Basic state discretization, simple action space
+**Performance**: Limited success (~10-20 lines)
+**Status**: Superseded by V-Learning approach
 
-| Method | Lines Cleared | Training Time | Hardware |
-|--------|---------------|---------------|----------|
-| Q-Learning | ~10-20 | 5000 episodes | CPU |
-| Cross-Entropy | 440.5 | 8 generations | CPU |
+### Cross-Entropy (Basic Implementation)
+**Location**: `Cross_Entropy/`
+
+**Purpose**: Early exploration of policy search methods
+**Features**: Basic Dellacherie features, simplified parameters
+**Performance**: Achieved 440.5 lines in testing
+**Status**: Superseded by paper-accurate CEM implementation
 
 ## Dependencies
 
-### Q-Learning
-- gymnasium
+### V-Learning
+- tensorflow
+- numpy
+- matplotlib
+
+### CEM
+- numpy
+- matplotlib
+- multiprocessing
+
+### Early Experiments
+- gymnasium (Q-Learning)
 - numpy
 - matplotlib
 - tqdm
-
-### Cross-Entropy
-- numpy
-- matplotlib
-- tqdm
-- threading (for timeout)
-
-## Key Innovations
-
-1. **State Discretization**: Different approaches for Q-learning vs Cross-Entropy
-2. **Optimized Action Evaluation**: Only considering final landing positions in CE
-3. **Environment Shallow Copying**: Significant performance improvement over deepcopy
-4. **Timeout Mechanism**: Prevents training from getting stuck
 
 ## References
 
-- Szita, I., & Lörincz, A. (2006). Learning Tetris using the noisy cross-entropy method. Neural computation, 18(12), 2936-2941.
-- Dellacherie, S. (2010). A new approach for Tetris: The best-first search algorithm. In Proceedings of the 2010 IEEE Conference on Computational Intelligence and Games (pp. 429-436).
+- **V-Learning**: Rex-L's value-based learning approach for Tetris
+- **CEM**: Original Cross-Entropy Method paper with strict parameter adherence
+- **Dellacherie Features**: Standard 6-feature evaluation system for Tetris
 
 ## License
 
