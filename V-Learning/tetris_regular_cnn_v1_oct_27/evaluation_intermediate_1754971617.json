@@ -1,0 +1,43 @@
+{
+  "episode_count": 3,
+  "total_score": 32200.300000000003,
+  "total_lines": 2376,
+  "total_t_spins": 6,
+  "total_combos": 1,
+  "avg_score": 10733.433333333334,
+  "avg_lines": 792.0,
+  "avg_t_spins": 2.0,
+  "avg_combos": 0.3333333333333333,
+  "current_game": {
+    "score": 10860.1,
+    "lines": 792,
+    "t_spins": 2,
+    "combo": 0,
+    "game_length": 1165.7866296768188
+  },
+  "scores_list": [
+    10670.1,
+    10670.1,
+    10860.1
+  ],
+  "lines_list": [
+    793,
+    791,
+    792
+  ],
+  "t_spins_list": [
+    2,
+    2,
+    2
+  ],
+  "combos_list": [
+    0,
+    1,
+    0
+  ],
+  "game_lengths": [
+    1147.1411862373352,
+    1139.5587167739868,
+    1165.7866296768188
+  ]
+}

@@ -1,0 +1,19 @@
+input shapes: (-1, 20, 10, 1) (1, 46) 
+ [height_sum, hole_sum, combo, is_hold, 6 * 7 type] -> length = 43 
+outer =    1 | pre-training avg score =  222.929 | loss =  268.775 | mse =  268.775 | dataset size =   36093 | new dataset size =   12031 | time elapsed:  371.5 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    2 | pre-training avg score =   66.275 | loss =  775.018 | mse =  775.018 | dataset size =   48148 | new dataset size =   12039 | time elapsed:  308.3 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    3 | pre-training avg score =  152.030 | loss =  500.645 | mse =  500.645 | dataset size =   60184 | new dataset size =   12038 | time elapsed:  341.7 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    4 | pre-training avg score =  242.900 | loss =  547.145 | mse =  547.145 | dataset size =   72216 | new dataset size =   12036 | time elapsed:  357.9 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    5 | pre-training avg score = 1470.100 | loss =  347.090 | mse =  347.090 | dataset size =   72188 | new dataset size =   12025 | time elapsed:  388.8 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+input shapes: (-1, 20, 10, 1) (1, 46) 
+ [height_sum, hole_sum, combo, is_hold, 6 * 7 type] -> length = 43 
+outer =    1 | pre-training avg score =   66.326 | loss = 1584.303 | mse = 1584.303 | dataset size =   36093 | new dataset size =   12031 | time elapsed:  244.3 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    2 | pre-training avg score =  162.030 | loss = 1066.128 | mse = 1066.128 | dataset size =   48121 | new dataset size =   12030 | time elapsed:  293.0 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    3 | pre-training avg score =  323.383 | loss =  658.369 | mse =  658.369 | dataset size =   60139 | new dataset size =   12026 | time elapsed:  311.2 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    4 | pre-training avg score =  956.767 | loss =  482.965 | mse =  482.965 | dataset size =   72198 | new dataset size =   12037 | time elapsed:  351.0 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+outer =    5 | pre-training avg score = 1555.100 | loss =  218.504 | mse =  218.504 | dataset size =   72204 | new dataset size =   12037 | time elapsed:  354.9 sec | coef = [1.0, 1.0, 1.0, 1.0] | penalty =    -500 | gamma =  0.950 | search best/rd = 6, 6 |
+Game 1/3 | Score: 10670.1 | Lines: 793 | T-spins: 2 | Combo: 0 | Time: 1147.1s | Running Avg Score: 10670.10 | Running Avg Lines: 793.00
+Game 2/3 | Score: 10670.1 | Lines: 791 | T-spins: 2 | Combo: 1 | Time: 1139.6s | Running Avg Score: 10670.10 | Running Avg Lines: 792.00
+Game 3/3 | Score: 10860.1 | Lines: 792 | T-spins: 2 | Combo: 0 | Time: 1165.8s | Running Avg Score: 10733.43 | Running Avg Lines: 792.00
+
+EVALUATION RESULTS | Games: 3 | Avg Score: 10733.43 | Avg Lines: 792.00 | Avg T-spins: 2.00 | Avg Combos: 0.33 | Avg Time: 1150.83s | Best Score: 10860.1 | Best Lines: 793

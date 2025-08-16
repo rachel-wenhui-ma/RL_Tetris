@@ -1,0 +1,39 @@
+# Training data files
+*.pkl
+*.h5
+*.keras
+*.pth
+*.ckpt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Model checkpoints
+checkpoints/
+models/
+weights/
+
+# Training outputs
+outputs/
+results/
+logs/
